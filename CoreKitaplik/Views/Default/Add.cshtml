@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewData["Title"] = "Add";
+}
+
+@model Book
+
+<h1>Yeni kitap ekleme</h1>
+
+
+<form asp-controller="default" asp-action="SaveBook"
+      method="post">
+    <label>Kitap İsmi : </label>
+    <input type="text" asp-for="bookName" />
+    <br />
+    <label>Kitap Yazarı : </label>
+    <input type="text" asp-for="author" />
+    <br />
+  
+    <button type="submit">Kitabı kaydet</button>
+
+</form>
+
+
